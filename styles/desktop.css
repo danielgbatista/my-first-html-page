@@ -1,0 +1,31 @@
+@media (min-width: 1281px) {
+    #post-content{
+        width: 90%;
+        padding: 4rem 2.4rem 2.4rem 2.4rem;
+    }
+
+    #gallery {
+        grid-gap: 1rem;
+    }
+
+    #gallery figure img {
+        height: 260px;
+    }
+
+    #gallery figcaption {
+        height: 98%;
+    }
+
+    #gallery figcaption h2{
+        font-size: 2rem;
+    }
+
+    #gallery figcaption p{
+        height: 80%;
+        font-size: 1rem;
+        overflow: hidden;
+        display: block;
+        -webkit-line-clamp: 0;
+        -webkit-box-orient: none; 
+    }
+}

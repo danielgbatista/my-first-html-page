@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+}
+
+:root{
+    --primary-text-color: #fcfcfc;
+    --background-secondary: #424242;
+    --background-primary: #252525;
+}
+
+body{
+    width: 100%;
+    height: 90%;
+    background-color: var(--background-primary);
+    font-family: "Jost", sans-serif;
+}
+
+header{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#tag{
+    font-weight: 700;
+    font-size: .8rem;
+    border-radius: 8px;
+    padding: .6rem 1rem;
+    border: 1px solid var(--primary-text-color);
+    background-color: var(--background-secondary);
+}
+
+h1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#profile-container{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+#profile-container figure img{
+    width: 48px;
+    border-radius: 100%;
+}
+
+#profile-text{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+#profile-text span{
+    font-size: .8rem;
+}
+
+#profile-text > span:first-child{
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+main #post-banner{
+    width: 90%;
+}
+
+#post-banner img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#post-content{
+    width: 90%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+#gallery {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    grid-gap: .6rem;
+    grid-template-areas: 
+        "kiki kiki casamonstro"
+        "coraline coraline coraline"
+        "paranorman marnie  soul"
+        "up up  orion"
+        "walle ponyo ponyo";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#gallery figure {
+    position: relative;
+}
+
+#gallery figure img {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    position: center;
+}
+
+#gallery figcaption {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 97%;
+    padding: 1rem;
+    position: absolute;
+    background-color: rgba(44, 44, 44, 0.5);
+    border-radius: 10px;
+}
+
+#gallery figcaption h2{
+    font-size: .68rem;
+}
+
+#gallery figcaption p{
+    height: 80%;
+    font-size: .6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; 
+}
+
+#gallery figure:nth-child(1) {
+    grid-area: kiki;
+}
+#gallery figure:nth-child(2) {
+    grid-area: casamonstro;
+}
+#gallery figure:nth-child(3) {
+    grid-area: coraline;
+}
+#gallery figure:nth-child(4) {
+    grid-area: paranorman;
+}
+#gallery figure:nth-child(5) {
+    grid-area: marnie;
+}
+#gallery figure:nth-child(6) {
+    grid-area: soul;
+}
+#gallery figure:nth-child(7) {
+    grid-area: up;
+}
+#gallery figure:nth-child(8) {
+    grid-area: orion;
+}
+#gallery figure:nth-child(9) {
+    grid-area: walle;
+}
+#gallery figure:nth-child(10) {
+    grid-area: ponyo;
+}
